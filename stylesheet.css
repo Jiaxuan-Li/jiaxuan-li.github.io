@@ -661,11 +661,16 @@ em {
   }
 
   .profile-name {
-    font-size: 1.9em;
+    font-size: clamp(24px, 7vw, 27.5px);
   }
 
   .name-zh {
-    font-size: 1.25em;
+    margin-left: 0.12em;
+    font-size: clamp(16px, 4.5vw, 18px);
+  }
+
+  .profile-name-line {
+    white-space: nowrap;
   }
 
   .section-heading {
