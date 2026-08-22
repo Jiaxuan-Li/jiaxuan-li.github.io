@@ -675,29 +675,6 @@ em {
     padding: 0 7px 22px !important;
   }
 
-  .profile-table tr {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .profile-table td {
-    width: 100% !important;
-    max-width: none !important;
-  }
-
-  .profile-table td:first-child {
-    padding-top: 12px !important;
-  }
-
-  .profile-table td:last-child {
-    padding-bottom: 0 !important;
-    text-align: center;
-  }
-
-  .profile-table img {
-    width: 150px !important;
-  }
-
   .publication-list tr {
     display: grid;
     grid-template-columns: minmax(115px, 28%) minmax(0, 1fr);
