@@ -648,8 +648,44 @@ em {
 }
 
 @media (max-width: 700px) {
+  body,
+  td,
+  th,
+  tr,
+  p {
+    font-size: 14.5px;
+  }
+
   body {
     padding: 0 8px 36px;
+  }
+
+  .profile-name {
+    font-size: 1.9em;
+  }
+
+  .name-zh {
+    font-size: 1.25em;
+  }
+
+  .section-heading {
+    font-size: 19px;
+  }
+
+  h1.section-heading {
+    font-size: 22px;
+  }
+
+  .social-links a,
+  .news-date,
+  .paper-links {
+    font-size: 13px;
+  }
+
+  .collaboration-note,
+  .paper-authors,
+  .paper-meta {
+    font-size: 14px;
   }
 
   .site-header {
@@ -700,7 +736,7 @@ em {
   }
 
   .paper-title {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
