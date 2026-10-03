@@ -1,6 +1,15 @@
 (() => {
   const translations = {
     ja: {
+      "nav.skip": "本文へ移動",
+      "nav.contents": "目次",
+      "nav.honors": "受賞・表彰",
+      "nav.domestic": "国内会議",
+      "nav.top": "ページ上部へ ↑",
+      "news.archive": "過去のお知らせ",
+      "link.paper": "論文",
+      "link.project": "プロジェクト",
+      "link.code": "コード",
       "nav.bio": "プロフィール",
       "nav.publications": "研究業績",
       "nav.activities": "学術活動",
@@ -32,11 +41,10 @@
       "news.jsps": "日本学術振興会（JSPS）特別研究員（<a href=\"https://www.jsps.go.jp/j-pd/pd_saiyoichiran.html\">DC2</a>）に採用されました。",
       "news.spring": "科学技術振興機構（JST）が支援する<a href=\"https://www.cis-trans.jp/spring_gx/index-e.html\">SPRING GXフェローシップ</a>に採択されました。",
       "section.publications": "主要論文",
-      "publication.more": "（<a href=\"publications.html\">全論文リスト</a>または<a href=\"https://scholar.google.com/citations?hl=en&amp;user=49tpDmAAAAAJ\">Google Scholar</a>）",
+      "publication.more": "<a href=\"publications.html\">全論文リスト</a> · <a href=\"https://scholar.google.com/citations?hl=en&amp;user=49tpDmAAAAAJ\">Google Scholar</a>",
       "section.full_publications": "論文一覧",
-      "publication.back": "（<a href=\"index.html#publications\">ホームに戻る</a>）",
-      "publication.home": "ホーム",
-      "footer.updated": "最終更新：2026年8月",
+      "publication.back": "<a href=\"index.html#publications\">← ホームに戻る</a>",
+      "footer.updated": "最終更新：2026年10月",
       "section.international": "国際論文",
       "publication.equal": "<sup>*</sup> 共同筆頭著者",
       "section.domestic": "国内会議発表（査読なし）",
@@ -62,16 +70,24 @@
       "activity.ircn": "<b>ポスター発表</b>、東京大学ニューロインテリジェンス国際研究機構（IRCN）、2024年7月",
       "activity.aist2024": "<b>招待講演</b>、産業技術総合研究所 知識情報研究チーム、2024年7月",
       "activity.icvss": "<b>International Computer Vision Summer School（ICVSS）</b>、イタリア・シチリア、2024年7月",
-      "activity.reviewer": "<b>査読実績</b>：IEEE TIP、NeurIPS、CVPR、ECCV、ACL ARR、AAAI、BMVC、ACCV",
-      "section.teaching": "教育",
-      "teaching.ai2614": "上海交通大学 AI2614「デジタル信号・画像処理」ティーチング・アシスタント、2021年春学期",
-      "teaching.ee367": "上海交通大学 EE367「通信回路基礎」ティーチング・アシスタント、2020年春学期"
+      "activity.reviewer": "<b>査読実績</b>：IEEE TIP、NeurIPS、ICLR、CVPR、ECCV、ACL ARR、AAAI、WACV、BMVC、ACCV",
+      "teaching.ai2614": "上海交通大学 AI2614「デジタル信号・画像処理」<b>ティーチング・アシスタント</b>、2021年春学期",
+      "teaching.ee367": "上海交通大学 EE367「通信回路基礎」<b>ティーチング・アシスタント</b>、2020年春学期"
     },
     zh: {
+      "nav.skip": "跳至正文",
+      "nav.contents": "页面目录",
+      "nav.honors": "奖项与荣誉",
+      "nav.domestic": "国内会议",
+      "nav.top": "返回顶部 ↑",
+      "news.archive": "查看往期动态",
+      "link.paper": "论文",
+      "link.project": "项目主页",
+      "link.code": "代码",
       "nav.bio": "简介",
       "nav.publications": "论文",
       "nav.activities": "学术活动",
-      "bio.current": "我目前在<a href=\"https://www.sbintuitions.co.jp/\">SB Intuitions Corp.</a>担任研究科学家，主要从事大语言模型和视觉语言模型研究。",
+      "bio.current": "我目前在 <a href=\"https://www.sbintuitions.co.jp/\">SB Intuitions Corp.</a> 担任研究科学家，主要从事大语言模型和视觉语言模型研究。",
       "bio.education": "我于2025年获得<a href=\"https://www.i.u-tokyo.ac.jp/index_e.shtml\">东京大学</a>情报理工学博士学位，师从<a href=\"https://www.nlab.ci.i.u-tokyo.ac.jp/~nakayama/index_en.html\">中山英树教授</a>，就读于<a href=\"https://www.nlab.ci.i.u-tokyo.ac.jp/index-e.html\">中山研究室</a>。此前，我在<a href=\"https://www.sjtu.edu.cn/\">上海交通大学</a>获得工学硕士学位，师从<a href=\"https://yuyeling.com/\">凌玉烨教授</a>；在<a href=\"https://www.shu.edu.cn/\">上海大学</a>获得工学学士学位，师从<a href=\"https://ivp.shu.edu.cn/zwb.htm\">刘志教授</a>。",
       "bio.interests": "我的研究方向包括<b>多模态推理</b>、<b>幻觉缓解</b>、<b>知识增强</b>和<b>可信人工智能</b>。",
       "bio.collaboration": "欢迎就多模态学习和可信人工智能开展合作研究。如有兴趣，欢迎<a href=\"mailto:jiaxuanli.work@gmail.com\">与我联系</a>。",
@@ -88,7 +104,7 @@
       "date.jsps": "2023年4月",
       "date.spring": "2022年4月",
       "news.emnlp": "论文《Do VLMs Share Safety Neurons Across Modalities?》获<a href=\"https://2026.emnlp.org/\">EMNLP 2026主会</a>录用。",
-      "news.job": "加入<a href=\"https://www.sbintuitions.co.jp/\"><strong>SB Intuitions</strong></a>担任研究科学家，主要从事负责任人工智能研究。",
+      "news.job": "加入 <a href=\"https://www.sbintuitions.co.jp/\"><strong>SB Intuitions</strong></a> 担任研究科学家，主要从事负责任人工智能研究。",
       "news.phd": "获得<a href=\"https://www.i.u-tokyo.ac.jp/index_e.shtml\">东京大学</a><strong>情报理工学博士学位</strong>。",
       "news.daad": "入选德国学术交流中心（DAAD）的<a href=\"https://www.daad.de/en/the-daad/postdocnet/\">AInet Fellow</a>项目。",
       "news.miru": "受邀在日本熊本举行的<a href=\"https://miru-committee.github.io/miru2024/en/\">MIRU 2024</a>上作关于<a href=\"https://jiaxuan-li.github.io/EVCap\">EVCap</a>的报告。",
@@ -99,11 +115,10 @@
       "news.jsps": "获选为日本学术振兴会（JSPS）特别研究员（<a href=\"https://www.jsps.go.jp/j-pd/pd_saiyoichiran.html\">DC2</a>）。",
       "news.spring": "入选日本科学技术振兴机构（JST）<a href=\"https://www.cis-trans.jp/spring_gx/index-e.html\">SPRING GX</a>项目。",
       "section.publications": "代表性论文",
-      "publication.more": "（查看<a href=\"publications.html\">完整列表</a>或<a href=\"https://scholar.google.com/citations?hl=en&amp;user=49tpDmAAAAAJ\">Google Scholar</a>）",
+      "publication.more": "查看<a href=\"publications.html\">完整论文列表</a> · <a href=\"https://scholar.google.com/citations?hl=en&amp;user=49tpDmAAAAAJ\">Google Scholar</a>",
       "section.full_publications": "完整论文列表",
-      "publication.back": "（<a href=\"index.html#publications\">返回主页</a>）",
-      "publication.home": "主页",
-      "footer.updated": "最后更新：2026年8月",
+      "publication.back": "<a href=\"index.html#publications\">← 返回主页</a>",
+      "footer.updated": "最后更新：2026年10月",
       "section.international": "国际论文",
       "publication.equal": "<sup>*</sup> 共同一作",
       "section.domestic": "国内会议论文（未经同行评审）",
@@ -129,10 +144,9 @@
       "activity.ircn": "<b>海报展示</b>，东京大学神经智能国际研究机构（IRCN），2024年7月",
       "activity.aist2024": "<b>邀请报告</b>，日本产业技术综合研究所知识与信息研究团队，2024年7月",
       "activity.icvss": "<b>国际计算机视觉暑期学校（ICVSS）</b>，意大利西西里，2024年7月",
-      "activity.reviewer": "<b>审稿人</b>：IEEE TIP、NeurIPS、CVPR、ECCV、ACL ARR、AAAI、BMVC、ACCV",
-      "section.teaching": "教学经历",
-      "teaching.ai2614": "上海交通大学AI2614《数字信号与图像处理》课程助教，2021年春季",
-      "teaching.ee367": "上海交通大学EE367《通信电路基础》课程助教，2020年春季"
+      "activity.reviewer": "<b>审稿人</b>：IEEE TIP、NeurIPS、ICLR、CVPR、ECCV、ACL ARR、AAAI、WACV、BMVC、ACCV",
+      "teaching.ai2614": "上海交通大学AI2614《数字信号与图像处理》<b>课程助教</b>，2021年春季",
+      "teaching.ee367": "上海交通大学EE367《通信电路基础》<b>课程助教</b>，2020年春季"
     }
   };
 
@@ -222,6 +236,7 @@
       url.searchParams.set("lang", lang);
       window.history.replaceState({}, "", url);
     }
+    window.dispatchEvent(new Event("site:languagechange"));
   };
 
   document.querySelectorAll("[data-set-lang]").forEach((button) => {
