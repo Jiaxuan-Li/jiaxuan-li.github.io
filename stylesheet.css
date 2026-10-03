@@ -5,6 +5,14 @@
   font-display: swap;
   src: url("fonts/outfit/outfit-latin.woff2") format("woff2");
 }
+@font-face {
+  font-family: "Jiaxuan Name";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/name-zh/name.ttf") format("truetype");
+  unicode-range: U+5609, U+674E, U+70DC;
+}
 
 :root {
   --page-bg: #fcfdff;
@@ -13,10 +21,10 @@
   --muted: #69717b;
   --accent: #235caf;
   --accent-strong: #2563eb;
-  --accent-hover: #174780;
+  --accent-hover: #a65e20;
   --rule: #e2e8f0;
   --soft-surface: #f0f6ff;
-  --note: #8b532a;
+  --note: #a65e20;
   --sans: "Outfit", "PingFang SC", "Hiragino Sans", system-ui, sans-serif;
   --heading: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, "Songti SC", "Yu Mincho", serif;
   color-scheme: light;
@@ -28,10 +36,10 @@
   --muted: #a0a9b0;
   --accent: #9bbdff;
   --accent-strong: #82aaff;
-  --accent-hover: #c5d8ff;
+  --accent-hover: #e1ad74;
   --rule: #354051;
   --soft-surface: #222b39;
-  --note: #e1b186;
+  --note: #e1ad74;
   color-scheme: dark;
 }
 html[lang="ja"] {
@@ -113,7 +121,7 @@ main { min-width: 0; }
 .profile-portrait { grid-area: portrait; margin-top: 8px; }
 .profile-name-line { grid-area: name; display: flex; align-items: baseline; gap: 18px; min-width: 0; white-space: nowrap; }
 .profile-name { margin: 0; font-family: var(--heading); font-size: 44px; line-height: 1.2; font-weight: 400; letter-spacing: -0.02em; }
-.name-zh { color: var(--muted); font-family: "Kaiti SC", "STKaiti", "KaiTi", "Songti SC", serif; font-size: 27px; letter-spacing: 0.02em; }
+.name-zh { color: var(--text-strong); font-family: "Jiaxuan Name", "Kaiti SC", "STKaiti", "KaiTi", serif; font-size: 34px; font-weight: 400; letter-spacing: 0.01em; }
 .profile-copy > p:not(.social-links) { margin-top: 14px; }
 .profile-copy > p:first-child { margin-top: 0; }
 html[lang="ja"] .profile-copy, html[lang="zh-CN"] .profile-copy { line-height: 1.8; }
@@ -129,6 +137,7 @@ html[lang="ja"] .profile-copy, html[lang="zh-CN"] .profile-copy { line-height: 1
 .news-date { padding-top: 2px; color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .news-archive { margin-top: 13px; }
 .news-archive summary { width: fit-content; padding: 4px 0; color: var(--accent); font-size: 14px; cursor: pointer; }
+.news-archive summary:hover { color: var(--accent-hover); }
 .news-archive[open] summary { margin-bottom: 10px; }
 
 .section-links { margin: -8px 0 14px; font-size: 14px; color: var(--muted); }
@@ -142,7 +151,7 @@ html[lang="ja"] .profile-copy, html[lang="zh-CN"] .profile-copy { line-height: 1
 .publication-visual img { width: 100%; max-height: 186px; object-fit: contain; }
 .paper-title { margin: 0 0 8px; font-family: var(--sans); font-size: 18px; font-weight: 600; line-height: 1.45; letter-spacing: 0; }
 .paper-title a { color: var(--text-strong); }
-.paper-title a:hover { color: var(--accent); }
+.paper-title a:hover { color: var(--accent-hover); }
 .paper-authors { font-size: 14px; color: var(--muted); line-height: 1.55; }
 .paper-meta { margin-top: 9px; font-size: 14px; line-height: 1.5; }
 .venue-line { color: var(--text); font-style: normal; }
@@ -150,7 +159,7 @@ html[lang="ja"] .profile-copy, html[lang="zh-CN"] .profile-copy { line-height: 1
 .paper-award { color: var(--note); font-size: 13px; }
 .paper-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 13px; font-size: 13px; line-height: 1.4; }
 .paper-links a { display: inline-flex; align-items: center; min-height: 34px; padding: 5px 11px; border: 1px solid var(--rule); border-radius: 4px; color: var(--accent); }
-.paper-links a:hover { border-color: var(--accent); background: var(--soft-surface); text-decoration: none; }
+.paper-links a:hover { border-color: var(--accent-hover); background: var(--soft-surface); text-decoration: none; }
 .publication-page-intro { margin-bottom: 44px; }
 .page-title { font-family: var(--heading); font-weight: 400; font-size: 40px; line-height: 1.25; letter-spacing: -0.01em; margin: 0 0 24px; }
 .publication-page-intro + .page-section { margin-top: 0; }
@@ -168,7 +177,7 @@ html[lang="ja"] .profile-copy, html[lang="zh-CN"] .profile-copy { line-height: 1
   .site-layout { gap: 32px; grid-template-columns: 132px minmax(0, 1fr); }
   .profile { grid-template-columns: minmax(0, 1fr) 170px; column-gap: 28px; }
   .profile-name { font-size: 40px; }
-  .name-zh { font-size: 24px; }
+  .name-zh { font-size: 30px; }
   .publication-item { grid-template-columns: 160px minmax(0, 1fr); gap: 24px; }
 }
 @media (max-width: 880px) {
@@ -199,7 +208,7 @@ html[lang="ja"] .profile-copy, html[lang="zh-CN"] .profile-copy { line-height: 1
   .profile-portrait { margin-top: 0; }
   .profile-name-line { flex-direction: column; align-items: flex-start; align-self: center; gap: 6px; white-space: normal; }
   .profile-name { font-size: clamp(30px, 8vw, 38px); }
-  .name-zh { font-size: clamp(21px, 6vw, 25px); }
+  .name-zh { font-size: clamp(25px, 7vw, 29px); }
   .social-links { gap: 12px 18px; }
   .social-links a { min-height: 44px; }
   .profile-copy .collaboration-note { font-size: 14px; }
